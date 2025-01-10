@@ -43,8 +43,12 @@ vim.api.nvim_create_autocmd("VimEnter", {
   end,
 })
 
+-- tree adaptive width
 require("nvim-tree").setup {
   view = {
     adaptive_size = true,
   },
 }
+
+-- restore cursor position
+require "configs.restore-cursor"
