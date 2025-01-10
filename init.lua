@@ -35,3 +35,10 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- always show the sidebar when starting up
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    vim.cmd ":NvimTreeToggle"
+  end,
+})
