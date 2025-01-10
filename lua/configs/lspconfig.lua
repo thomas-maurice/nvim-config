@@ -8,6 +8,8 @@ local servers = {
   "ansiblels",
   "bashls",
   "buf_ls",
+  "docker_compose_language_service",
+  "dockerls",
   "gopls",
   "helm_ls",
   "jsonls",
