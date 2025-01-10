@@ -1,12 +1,13 @@
 local options = {
   formatters_by_ft = {
-    lua = { "stylua" },
     -- css = { "prettier" },
     -- html = { "prettier" },
-    go = { "gofumpt", "goimports-reviser", "golines"},
+    go = { "gofumpt", "goimports-reviser", "golines" },
     hcl = { "hcl" },
     json = { "jq" },
+    lua = { "stylua" },
     proto = { "buf" },
+    terraform = { "tflint" },
     yaml = { "yq" },
   },
 
