@@ -42,3 +42,9 @@ vim.api.nvim_create_autocmd("VimEnter", {
     vim.cmd ":NvimTreeToggle"
   end,
 })
+
+require("nvim-tree").setup {
+  view = {
+    adaptive_size = true,
+  },
+}
