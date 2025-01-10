@@ -6,6 +6,8 @@ local options = {
     go = { "gofumpt", "goimports-reviser", "golines"},
     hcl = { "hcl" },
     json = { "jq" },
+    proto = { "buf" },
+    yaml = { "yq" },
   },
 
   format_on_save = {
