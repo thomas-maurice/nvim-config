@@ -30,3 +30,4 @@ end
 -- Save and quit keymaps
 map("n", "<leader>w", ":w<CR>", {})
 map("n", "<leader>a", ":wa<CR>", {})
+map("n", "<leader>q", ":wqa<CR>", {})
