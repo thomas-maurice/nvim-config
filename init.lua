@@ -51,4 +51,4 @@ require("nvim-tree").setup {
 }
 
 -- restore cursor position
-require "configs.restore-cursor"
+require "custom.restore-cursor"
