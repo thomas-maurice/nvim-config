@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "vscode_dark",
+  theme = "chadracula-evondev",
 
   -- hl_override = {
   -- 	Comment = { italic = true },
@@ -14,7 +14,19 @@ M.base46 = {
   -- },
 }
 
-M.ui = { telescope = { style = "bordered" } }
+M.ui = {
+  telescope = {
+    style = "bordered",
+  },
+  statusline = {
+    theme = "default", -- default/vscode/vscode_colored/minimal
+    -- default/round/block/arrow separators work only for default statusline theme
+    -- round and block will work for minimal theme only
+    separator_style = "arrow",
+    -- order = nil,
+    -- modules = nil,
+  },
+}
 
 M.nvdash = {
   load_on_startup = true,
