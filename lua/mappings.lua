@@ -18,11 +18,16 @@ map("n", "<leader>fg", telescope.live_grep, {})
 map("n", "<leader>fb", telescope.buffers, {})
 map("n", "<leader>fh", telescope.help_tags, {})
 
+local lsp_prefix = "<leader>l"
 -- LSP stuff
-map("n", "<leader>lh", function()
+map("n", lsp_prefix .. "h", function()
   lspbuf.hover()
   lspbuf.hover()
-end, { desc = "Asks the LSP infos about the hovered text" })
+end, { desc = "LSP hover info" })
+map("n", lsp_prefix .. "r", lspbuf.rename, { desc = "Rename symbol" })
+map("n", lsp_prefix .. "i", lspbuf.implementation, { desc = "Go to implementations" })
+map("n", lsp_prefix .. "d", lspbuf.definition, { desc = "Go to definition" })
+map("n", lsp_prefix .. "D", lspbuf.declaration, { desc = "Go to declaration" })
 
 -- Tree
 map("n", "<leader>tf", ":NvimTreeFocus<CR>", { desc = "Focuses on the nav tree" })
