@@ -6,3 +6,9 @@ The following are needed:
 * npm
 * git
 * go
+
+Post-install:
+```
+:MasonInstallAll
+:GoInstallBinaries
+```

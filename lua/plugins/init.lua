@@ -6,4 +6,6 @@ return {
   require "plugins.nvim-lint",
   -- LSP config
   require "plugins.lspconfig",
+  -- Go config
+  require "plugins.go-nvim",
 }
