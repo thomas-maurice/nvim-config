@@ -6,6 +6,10 @@ local lspbuf = vim.lsp.buf
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
+-- Editing
+-- use U for redos
+map("n", "U", "<C-r>", { desc = "Redo" })
+
 -- Telescope bindings
 local telescope = require "telescope.builtin"
 
@@ -15,7 +19,10 @@ map("n", "<leader>fb", telescope.buffers, {})
 map("n", "<leader>fh", telescope.help_tags, {})
 
 -- LSP stuff
-map("n", "<leader>lh", lspbuf.hover, { desc = "Asks the LSP infos about the hovered text" })
+map("n", "<leader>lh", function()
+  lspbuf.hover()
+  lspbuf.hover()
+end, { desc = "Asks the LSP infos about the hovered text" })
 
 -- Tree
 map("n", "<leader>tf", ":NvimTreeFocus<CR>", { desc = "Focuses on the nav tree" })

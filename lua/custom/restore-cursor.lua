@@ -1,5 +1,7 @@
 local autocmd = vim.api.nvim_create_autocmd
 
+-- restores the cursor the the last position
+-- if the buffer was previously opened
 autocmd("BufReadPost", {
   pattern = "*",
   callback = function()
