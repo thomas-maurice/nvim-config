@@ -7,7 +7,8 @@ local options = {
     json = { "jq" },
     lua = { "stylua" },
     proto = { "buf" },
-    terraform = { "tflint" },
+    python = { "black" },
+    terraform = { "terraform_fmt" },
     yaml = { "yq" },
   },
 
@@ -15,6 +16,9 @@ local options = {
     -- These options will be passed to conform.format()
     timeout_ms = 1000,
     lsp_fallback = true,
+  },
+  formatters = {
+    ["goimports-reviser"] = { prepend_args = { "-rm-unused" } },
   },
 }
 
