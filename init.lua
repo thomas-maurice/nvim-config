@@ -37,11 +37,11 @@ vim.schedule(function()
 end)
 
 -- always show the sidebar when starting up
-vim.api.nvim_create_autocmd("VimEnter", {
-  callback = function()
-    vim.cmd ":NvimTreeToggle"
-  end,
-})
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--   callback = function()
+--     vim.cmd ":NvimTreeToggle"
+--   end,
+-- })
 
 -- tree adaptive width
 require("nvim-tree").setup {
