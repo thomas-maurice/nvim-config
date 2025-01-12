@@ -11,9 +11,13 @@ local servers = {
   "docker_compose_language_service",
   "dockerls",
   "gopls",
+  "graphql",
   "helm_ls",
   "jsonls",
   "lua_ls",
+  "pylsp",
+  "pyre",
+  "sqls",
   "terraformls",
   "yamlls",
 }
