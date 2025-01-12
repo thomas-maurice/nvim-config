@@ -2,8 +2,8 @@ local options = {
   formatters_by_ft = {
     -- css = { "prettier" },
     -- html = { "prettier" },
-    go = { "gofumpt", "goimports-reviser", "golines" },
-    hcl = { "hcl" },
+    go = { "gofumpt", "golines", "goimports" },
+    hcl = { "hclfmt" },
     json = { "jq" },
     lua = { "stylua" },
     proto = { "buf" },
@@ -16,9 +16,6 @@ local options = {
     -- These options will be passed to conform.format()
     timeout_ms = 1000,
     lsp_fallback = true,
-  },
-  formatters = {
-    ["goimports-reviser"] = { prepend_args = { "-rm-unused" } },
   },
 }
 
