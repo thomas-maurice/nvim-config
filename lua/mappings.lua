@@ -10,6 +10,10 @@ map("i", "jk", "<ESC>")
 -- use U for redos
 map("n", "U", "<C-r>", { desc = "Redo" })
 
+-- Copying in pasting
+map("v", "<leader>y", [["+y]], { desc = "Copy in the system's clipboard" })
+map("n", "<leader>P", [["+p]], { desc = "Paste from the system's clipboard" })
+
 -- Telescope bindings
 local telescope = require "telescope.builtin"
 
