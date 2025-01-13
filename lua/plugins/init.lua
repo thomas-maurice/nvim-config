@@ -8,4 +8,6 @@ return {
   require "plugins.lspconfig",
   -- Go config
   require "plugins.go-nvim",
+  -- Leap search
+  require "plugins.leap",
 }
