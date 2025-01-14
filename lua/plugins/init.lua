@@ -10,4 +10,6 @@ return {
   require "plugins.go-nvim",
   -- Leap search
   require "plugins.leap",
+  -- Snacks
+  require "plugins.snacks",
 }
