@@ -12,4 +12,6 @@ return {
   require "plugins.leap",
   -- Snacks
   require "plugins.snacks",
+  -- Trouble
+  require "plugins.trouble",
 }
