@@ -52,3 +52,4 @@ require("nvim-tree").setup {
 
 -- restore cursor position
 require "custom.restore-cursor"
+require "custom.lsp-load-notification"

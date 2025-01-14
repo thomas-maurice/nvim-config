@@ -52,6 +52,15 @@ lspconfig.gopls.setup = {
   },
 }
 
+-- as per https://github.com/neovim/nvim-lspconfig/issues/3189
+local homedir = vim.fn.expand "$HOME"
+local runtime_files = vim.api.nvim_get_runtime_file("", true)
+for k, v in ipairs(runtime_files) do
+  if v == homedir .. "/.config/nvim/after" or v == homedir .. "/.config/nvim" then
+    table.remove(runtime_files, k)
+  end
+end
+
 lspconfig.lua_ls.setup {
   on_init = function(client)
     if client.workspace_folders then
@@ -77,7 +86,8 @@ lspconfig.lua_ls.setup {
         --  "${3rd}/busted/library",
         -- },
         -- or pull in all of 'runtimepath'. NOTE: this is a lot slower and will cause issues when working on your own configuration (see https://github.com/neovim/nvim-lspconfig/issues/3189)
-        library = vim.api.nvim_get_runtime_file("", true),
+        -- library = vim.api.nvim_get_runtime_file("", true),
+        library = runtime_files,
       },
     })
   end,
