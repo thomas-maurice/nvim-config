@@ -14,6 +14,7 @@ return {
       "luadoc",
       "make",
       "markdown",
+      "markdown_inline",
       "python",
       "terraform",
       "toml",

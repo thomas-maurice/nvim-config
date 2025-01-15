@@ -14,4 +14,6 @@ return {
   require "plugins.snacks",
   -- Trouble
   require "plugins.trouble",
+  -- Markdown rendering
+  require "plugins.render-markdown",
 }

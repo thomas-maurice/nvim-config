@@ -1,5 +1,4 @@
 # NvChad config
-
 The following are needed:
 * ripgrep
 * luarocks
@@ -8,7 +7,7 @@ The following are needed:
 * go
 
 Post-install:
-```
+```vim
 :MasonInstallAll
 :GoInstallBinaries
 ```
