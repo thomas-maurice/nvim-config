@@ -30,6 +30,13 @@ vim.api.nvim_create_autocmd("LspProgress", {
       return table.insert(msg, v.msg) or not v.done
     end, p)
 
+    -- Remove the turbo annoying LSP messages from python that pop up every 5 seconds
+    -- to tell me some linter i don't care about has finished running
+    local lsp = vim.lsp.get_client_by_id(ev.data.client_id)
+    if lsp ~= nil and lsp.name == "pylsp" and string.find(table.concat(msg, ""), "lint:", 1, true) ~= nil then
+      return
+    end
+
     local spinner = { "⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏" }
     vim.notify(table.concat(msg, "\n"), "info", {
       id = "lsp_progress",
