@@ -29,17 +29,18 @@ vim.api.nvim_create_autocmd("CursorHold", {
       scope = "cursor",
     }
     vim.diagnostic.open_float(nil, opts)
-    return 
-    local diags = get_diag_at_cursor()
-    if diags == "" then
-      return
-    end
-    vim.notify(diags, "info", {
-      id = "diag",
-      title = "Diag",
-      opts = function(notif)
-        notif.timeout = 5000
-      end,
-    })
+    -- uncomment wenn the notifications don't suck anymore
+    --
+    -- local diags = get_diag_at_cursor()
+    -- if diags == "" then
+    --   return
+    -- end
+    -- vim.notify(diags, "info", {
+    --   id = "diag",
+    --   title = "Diag",
+    --   opts = function(notif)
+    --     notif.timeout = 5000
+    --   end,
+    -- })
   end,
 })
