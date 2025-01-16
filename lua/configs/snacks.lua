@@ -1,5 +1,6 @@
 ---@type snacks.Config
 local options = {
+  debug = { enabled = true },
   indent = {
     enabled = true,
     animate = {
