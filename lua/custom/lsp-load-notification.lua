@@ -41,6 +41,10 @@ vim.api.nvim_create_autocmd("LspProgress", {
       return
     end
 
+    if lsp ~= nil and lsp.name == "buf_ls" then
+      return
+    end
+
     local spinner = { "⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏" }
     vim.notify(table.concat(msg, "\n"), "info", {
       id = "lsp_progress",
