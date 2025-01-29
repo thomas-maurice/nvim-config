@@ -16,4 +16,8 @@ return {
   require "plugins.trouble",
   -- Markdown rendering
   require "plugins.render-markdown",
+  -- gitsigns
+  require "plugins.gitsigns",
+  -- minimap
+  require "plugins.neominimap",
 }
