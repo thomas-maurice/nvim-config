@@ -19,6 +19,8 @@ local servers = {
   "pyre",
   "sqls",
   "terraformls",
+  "ts_ls",
+  "vuels",
   "yamlls",
 }
 local nvlsp = require "nvchad.configs.lspconfig"

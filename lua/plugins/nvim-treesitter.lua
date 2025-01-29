@@ -20,6 +20,7 @@ return {
       "toml",
       "vim",
       "vimdoc",
+      "vue",
       "yaml",
     },
   },
