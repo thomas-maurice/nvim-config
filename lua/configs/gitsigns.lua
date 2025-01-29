@@ -7,6 +7,6 @@ return {
   current_line_blame_opts = {
     delay = 500,
   },
-  numh = true,
+  numhl = true,
   word_diff = true,
 }
