@@ -20,4 +20,6 @@ return {
   require "plugins.gitsigns",
   -- minimap
   require "plugins.neominimap",
+  -- lspnotify
+  require "plugins.lspnotify",
 }

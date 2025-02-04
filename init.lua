@@ -52,7 +52,7 @@ require("nvim-tree").setup {
 
 -- restore cursor position
 require "custom.restore-cursor"
-require "custom.lsp-load-notification"
+--require "custom.lsp-load-notification"
 require "custom.lsp-diag-hover"
 
 -- Snacks debug functions
@@ -64,3 +64,6 @@ _G.bt = function()
   Snacks.debug.backtrace()
 end
 vim.print = _G.dd
+
+--- enable in march when 0.11 hits
+---vim.diagnostic.config { virtual_lines = true }
