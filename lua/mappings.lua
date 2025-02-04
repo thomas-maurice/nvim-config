@@ -5,6 +5,7 @@ local lspbuf = vim.lsp.buf
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
+map("i", "ccc", require("cmp").mapping.complete(), { desc = "Triggers the auto complete" })
 
 -- Editing
 -- use U for redos
