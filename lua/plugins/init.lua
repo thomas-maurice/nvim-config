@@ -22,4 +22,6 @@ return {
   require "plugins.neominimap",
   -- lspnotify
   require "plugins.lspnotify",
+  -- godoc
+  require "plugins.godoc",
 }

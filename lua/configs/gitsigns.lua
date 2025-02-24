@@ -8,5 +8,5 @@ return {
     delay = 500,
   },
   numhl = true,
-  word_diff = true,
+  word_diff = false,
 }
