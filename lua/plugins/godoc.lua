@@ -18,7 +18,7 @@ return {
       {
         name = "go",
         opts = {
-          command = "GDoc", -- the vim command to invoke Go documentation
+          command = "GoDoc", -- the vim command to invoke Go documentation
         },
       },
     },
