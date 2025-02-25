@@ -12,7 +12,7 @@ return {
     },
   },
   build = "go install github.com/lotusirous/gostdsym/stdsym@latest",
-  cmd = { "GDoc" },
+  cmd = { "GoDoc" },
   opts = {
     adapters = {
       {
