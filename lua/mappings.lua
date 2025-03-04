@@ -15,6 +15,10 @@ map("n", "U", "<C-r>", { desc = "Redo" })
 map("v", "<leader>y", [["+y]], { desc = "Copy in the system's clipboard" })
 map("n", "<leader>P", [["+p]], { desc = "Paste from the system's clipboard" })
 
+-- Keep selection in visual mode after indent
+map("v", ">", ">gv", { noremap = false })
+map("v", "<", "<gv", { noremap = false })
+
 -- Leap mappings
 vim.keymap.set({ "n", "x", "o" }, "s", "<Plug>(leap-forward)")
 vim.keymap.set({ "n", "x", "o" }, "S", "<Plug>(leap-backward)")
