@@ -64,6 +64,3 @@ _G.bt = function()
   Snacks.debug.backtrace()
 end
 vim.print = _G.dd
-
---- enable in march when 0.11 hits
----vim.diagnostic.config { virtual_lines = true }

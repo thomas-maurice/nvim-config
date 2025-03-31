@@ -97,3 +97,5 @@ lspconfig.lua_ls.setup {
     Lua = {},
   },
 }
+
+vim.diagnostic.config { virtual_lines = true, virtual_text = false }
