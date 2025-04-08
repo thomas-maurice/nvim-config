@@ -61,3 +61,11 @@ end
 map("n", "<leader>w", ":w<CR>", { desc = "Writes current buffer" })
 map("n", "<leader>a", ":wa<CR>", { desc = "Writes all buffers " })
 map("n", "<leader>q", ":wqa<CR>", { desc = "Quits vim" })
+
+-- Toggle between virtual text and virtual lines
+map("n", "<leader>vl", function()
+  vim.diagnostic.config {
+    virtual_lines = not vim.diagnostic.config().virtual_lines,
+    virtual_text = vim.diagnostic.config().virtual_lines,
+  }
+end, { desc = "Toggle between virtual lines and virtual text " })
