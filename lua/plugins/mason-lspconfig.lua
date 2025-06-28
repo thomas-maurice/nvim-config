@@ -1,6 +1,8 @@
 return {
-    setup = function()
-        local enabled_lsps = {
+    "mason-org/mason-lspconfig.nvim",
+    lazy = false,
+    opts = {
+        ensure_installed = {
             "ansiblels",
             "bashls",
             "buf_ls",
@@ -20,10 +22,6 @@ return {
             "ts_ls",
             "vuels",
             "yamlls",
-        }
-
-        for _, lsp in ipairs(enabled_lsps) do
-            vim.lsp.enable(lsp)
-        end
-    end
+        },
+    },
 }

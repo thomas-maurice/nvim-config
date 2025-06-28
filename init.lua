@@ -64,3 +64,5 @@ _G.bt = function()
   Snacks.debug.backtrace()
 end
 vim.print = _G.dd
+
+require "configs.lspconfig".setup()

@@ -5,7 +5,7 @@ return {
   require "plugins.conform",
   require "plugins.nvim-lint",
   -- LSP config
-  require "plugins.lspconfig",
+  require "plugins.mason-lspconfig",
   -- Go config
   require "plugins.go-nvim",
   -- Leap search
