@@ -24,4 +24,6 @@ return {
   require "plugins.lspnotify",
   -- godoc
   require "plugins.godoc",
+  -- mason
+  require "plugins.mason-tool-installer",
 }
