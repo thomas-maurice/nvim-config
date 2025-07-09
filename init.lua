@@ -55,6 +55,8 @@ require "custom.restore-cursor"
 --require "custom.lsp-load-notification"
 require "custom.lsp-diag-hover"
 
+local Snacks = require "snacks"
+
 -- Snacks debug functions
 _G.dd = function(...)
   Snacks.debug.inspect(...)
@@ -65,4 +67,4 @@ _G.bt = function()
 end
 vim.print = _G.dd
 
-require "configs.lspconfig".setup()
+require("configs.lspconfig").setup()
