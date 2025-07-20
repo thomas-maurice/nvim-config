@@ -12,11 +12,13 @@ local options = {
     yaml = { "yq" },
   },
 
-  format_on_save = {
-    -- These options will be passed to conform.format()
-    timeout_ms = 1000,
-    lsp_fallback = true,
-  },
+  format_on_save = function(bufnr)
+    local filename = vim.api.nvim_buf_get_name(bufnr)
+    if vim.fn.fnamemodify(filename, ":t") == "keyboard.json" then
+      return
+    end
+    return { lsp_fallback = true }
+  end,
 }
 
 return options
