@@ -6,3 +6,6 @@ local o = vim.o
 o.cursorlineopt = "both"
 -- term colours
 o.termguicolors = true
+
+o.spell = true
+o.spelllang = "en_gb"
