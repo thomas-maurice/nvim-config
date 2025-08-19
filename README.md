@@ -5,6 +5,7 @@ The following are needed:
 * npm
 * git
 * go
+* lazygit
 
 Post-install:
 ```vim
