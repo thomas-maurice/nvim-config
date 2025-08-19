@@ -1,6 +1,7 @@
 return {
   -- treesitter
   require "plugins.nvim-treesitter",
+  require "plugins.nvim-treesitter-context",
   -- formatter & linter
   require "plugins.conform",
   require "plugins.nvim-lint",
@@ -8,7 +9,8 @@ return {
   require "plugins.mason-lspconfig",
   -- Go config
   require "plugins.go-nvim",
-  -- Leap search
+  require "plugins.godoc",
+  -- Search
   require "plugins.leap",
   -- Snacks
   require "plugins.snacks",
@@ -16,14 +18,14 @@ return {
   require "plugins.trouble",
   -- Markdown rendering
   require "plugins.render-markdown",
-  -- gitsigns
+  -- git stuff
   require "plugins.gitsigns",
+  require "plugins.lazygit",
   -- minimap
   require "plugins.neominimap",
   -- lspnotify
   require "plugins.lspnotify",
-  -- godoc
-  require "plugins.godoc",
   -- mason
+  require "plugins.mason-lspconfig",
   require "plugins.mason-tool-installer",
 }
