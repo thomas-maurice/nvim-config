@@ -4,6 +4,11 @@ return {
   opts = {
     ensure_installed = {
       "delve",
+      "gofumpt",
+      "goimports",
+      "goimports-reviser",
+      "golangci-lint",
+      "gomodifytags",
       "luacheck",
     },
   },
