@@ -1,27 +1,8 @@
 return {
-    "mason-org/mason-lspconfig.nvim",
-    lazy = false,
-    opts = {
-        ensure_installed = {
-            "ansiblels",
-            "bashls",
-            "buf_ls",
-            "docker_compose_language_service",
-            "dockerls",
-            "gh_actions_ls",
-            "golangci_lint_ls",
-            "gopls",
-            "graphql",
-            "helm_ls",
-            "jsonls",
-            "lua_ls",
-            "pylsp",
-            "pyre",
-            "sqls",
-            "terraformls",
-            "ts_ls",
-            "vuels",
-            "yamlls",
-        },
-    },
+  "mason-org/mason-lspconfig.nvim",
+  lazy = false,
+  opts = {
+    ensure_installed = require("configs.lspconfig").lsps_list
+  },
 }
+
