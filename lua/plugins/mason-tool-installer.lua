@@ -8,6 +8,7 @@ return {
       "goimports",
       "goimports-reviser",
       "golangci-lint",
+      "golines",
       "gomodifytags",
       "luacheck",
     },
