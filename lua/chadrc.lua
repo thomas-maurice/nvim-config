@@ -19,7 +19,7 @@ M.ui = {
     style = "bordered",
   },
   cmp = {
-    icons_left = true, -- only for non-atom styles!
+    icons_left = true,      -- only for non-atom styles!
     style = "atom_colored", -- default/flat_light/flat_dark/atom/atom_colored
     abbr_maxwidth = 60,
     format_colors = {
@@ -38,7 +38,7 @@ M.ui = {
 }
 
 M.nvdash = {
-  load_on_startup = true,
+  load_on_startup = false,
 }
 
 return M
