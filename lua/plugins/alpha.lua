@@ -130,15 +130,15 @@ return {
     })
 
     dashboard.section.buttons.val = {
-      dashboard.button("f", " Search for a file", "<cmd>Telescope find_files<CR>"),
-      dashboard.button("o", "󱫤 Recent files", "<cmd>Telescope oldfiles<CR>"),
-      dashboard.button("g", " Grep for a word", "<cmd>Telescope live_grep<CR>"),
-      dashboard.button("h", "󰌌 Key mappings", "<cmd>NvCheatsheet<CR>"),
-      dashboard.button("L", "󰅢 Lazy", "<cmd>Lazy<CR>"),
-      dashboard.button("M", " Mason", "<cmd>Mason<CR>"),
-      dashboard.button("c", " Edit condfiguration", "<cmd>lua _G.open_config_directory()<CR>"),
-      dashboard.button("e", " New file", ":ene <BAR> startinsert <CR>"),
-      dashboard.button("q", " Quit", ":qa<CR>"),
+      dashboard.button("f", "  Search for a file", "<cmd>Telescope find_files<CR>"),
+      dashboard.button("o", "󱫤  Recent files", "<cmd>Telescope oldfiles<CR>"),
+      dashboard.button("g", "  Grep for a word", "<cmd>Telescope live_grep<CR>"),
+      dashboard.button("h", "󰌌  Key mappings", "<cmd>NvCheatsheet<CR>"),
+      dashboard.button("L", "󰅢  Lazy", "<cmd>Lazy<CR>"),
+      dashboard.button("M", "  Mason", "<cmd>Mason<CR>"),
+      dashboard.button("c", "  Edit condfiguration", "<cmd>lua _G.open_config_directory()<CR>"),
+      dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+      dashboard.button("q", "󰩈 Quit", ":qa<CR>"),
     }
 
     alpha.setup(dashboard.config)
