@@ -116,6 +116,19 @@ return {
       end,
     })
 
+    vim.api.nvim_create_autocmd("User", {
+      once = true,
+      pattern = "LazyVimStarted",
+      callback = function()
+        local stats = require("lazy").stats()
+        local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
+        -- dashboard.section.footer.val = "⚡ Neovim loaded "
+        local footer = "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms"
+        dashboard.section.footer.val = footer
+        pcall(vim.cmd.AlphaRedraw)
+      end,
+    })
+
     dashboard.section.buttons.val = {
       dashboard.button("f", " Search for a file", "<cmd>Telescope find_files<CR>"),
       dashboard.button("o", "󱫤 Recent files", "<cmd>Telescope oldfiles<CR>"),
