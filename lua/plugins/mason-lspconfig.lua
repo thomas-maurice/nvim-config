@@ -5,4 +5,3 @@ return {
     ensure_installed = require("configs.lspconfig").lsps_list
   },
 }
-

@@ -1,5 +1,3 @@
-local lspconfig = require "lspconfig"
-
 local lsps = {
   "ansiblels",
   "bashls",
@@ -26,8 +24,7 @@ return {
   lsps_list = lsps,
   setup = function()
     local enabled_lsps = lsps
-
-    lspconfig.jsonls.setup {
+    vim.lsp.config("jsonls", {
       on_attach = function(client, bufnr)
         local filename = vim.api.nvim_buf_get_name(bufnr)
         if vim.fn.fnamemodify(filename, ":t") == "keyboard.json" then
@@ -35,7 +32,7 @@ return {
           client.server_capabilities.documentRangeFormattingProvider = false
         end
       end,
-    }
+    })
 
     for _, lsp in ipairs(enabled_lsps) do
       vim.lsp.enable(lsp)
