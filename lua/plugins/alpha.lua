@@ -134,12 +134,11 @@ return {
       dashboard.button("o", "󱫤 Recent files", "<cmd>Telescope oldfiles<CR>"),
       dashboard.button("g", " Grep for a word", "<cmd>Telescope live_grep<CR>"),
       dashboard.button("h", "󰌌 Key mappings", "<cmd>NvCheatsheet<CR>"),
-      dashboard.button("u", "󰅢 Plugins update", "<cmd>Lazy update<CR>"),
-      dashboard.button("m", " Mason", "<cmd>Mason<CR>"),
+      dashboard.button("L", "󰅢 Lazy", "<cmd>Lazy<CR>"),
+      dashboard.button("M", " Mason", "<cmd>Mason<CR>"),
       dashboard.button("c", " Edit condfiguration", "<cmd>lua _G.open_config_directory()<CR>"),
-      dashboard.button("r", "󰇌 Randomize header color", "<cmd>lua _G.random_header_color()<CR>"),
-      dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
-      dashboard.button("q", "  Quit", ":qa<CR>"),
+      dashboard.button("e", " New file", ":ene <BAR> startinsert <CR>"),
+      dashboard.button("q", " Quit", ":qa<CR>"),
     }
 
     alpha.setup(dashboard.config)
