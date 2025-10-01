@@ -9,3 +9,5 @@ o.termguicolors = true
 
 o.spell = true
 o.spelllang = "en_gb"
+
+o.cc = "80,110"
