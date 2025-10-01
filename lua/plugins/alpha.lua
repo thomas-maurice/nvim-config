@@ -138,7 +138,7 @@ return {
       dashboard.button("M", "  Mason", "<cmd>Mason<CR>"),
       dashboard.button("c", "  Edit condfiguration", "<cmd>lua _G.open_config_directory()<CR>"),
       dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
-      dashboard.button("q", "󰩈 Quit", ":qa<CR>"),
+      dashboard.button("q", "󰩈  Quit", ":qa<CR>"),
     }
 
     alpha.setup(dashboard.config)

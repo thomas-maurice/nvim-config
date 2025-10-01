@@ -1,8 +1,18 @@
 return {
   "MeanderingProgrammer/render-markdown.nvim",
-  dependencies = { "nvim-treesitter/nvim-treesitter" },
+  dependencies = {
+    "nvim-treesitter/nvim-treesitter",
+  },
   ft = { "markdown" },
   ---@module 'render-markdown'
   ---@type render.md.UserConfig
-  opts = {},
+  opts = {
+    overrides = {
+      buftype = {
+        nofile = {
+          enabled = false,
+        },
+      },
+    },
+  },
 }
