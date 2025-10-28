@@ -131,7 +131,7 @@ return {
 
     dashboard.section.buttons.val = {
       dashboard.button("f", "  Search for a file", "<cmd>Telescope find_files<CR>"),
-      dashboard.button("o", "󱫤  Recent files", "<cmd>Telescope oldfiles<CR>"),
+      dashboard.button("r", "󱫤  Recent files", "<cmd>Telescope oldfiles<CR>"),
       dashboard.button("g", "  Grep for a word", "<cmd>Telescope live_grep<CR>"),
       dashboard.button("h", "󰌌  Key mappings", "<cmd>NvCheatsheet<CR>"),
       dashboard.button("L", "󰅢  Lazy", "<cmd>Lazy<CR>"),

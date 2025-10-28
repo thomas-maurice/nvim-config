@@ -6,6 +6,7 @@ The following are needed:
 * git
 * go
 * lazygit
+* nixd
 
 Post-install:
 ```vim

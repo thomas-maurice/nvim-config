@@ -11,6 +11,8 @@ local lsps = {
   "helm_ls",
   "jsonls",
   "lua_ls",
+  "nil_ls",
+  "nixd",
   "pylsp",
   "pyre",
   "sqls",
