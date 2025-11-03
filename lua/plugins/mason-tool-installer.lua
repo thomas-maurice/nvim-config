@@ -11,7 +11,6 @@ return {
       "golines",
       "gomodifytags",
       "luacheck",
-      "nixfmt",
       "stylua",
     },
   },
