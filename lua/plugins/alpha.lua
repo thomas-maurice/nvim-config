@@ -79,6 +79,11 @@ return {
       vim.cmd "NvimTreeFocus"
     end
 
+    _G.open_nix_config_directory = function()
+      vim.cmd("cd " .. vim.fn.expand "${HOME}/.config/home-manager")
+      vim.cmd "NvimTreeFocus"
+    end
+
     local alpha = require "alpha"
     local dashboard = require "alpha.themes.dashboard"
 
@@ -133,10 +138,11 @@ return {
       dashboard.button("f", "  Search for a file", "<cmd>Telescope find_files<CR>"),
       dashboard.button("r", "󱫤  Recent files", "<cmd>Telescope oldfiles<CR>"),
       dashboard.button("g", "  Grep for a word", "<cmd>Telescope live_grep<CR>"),
-      dashboard.button("h", "󰌌  Key mappings", "<cmd>NvCheatsheet<CR>"),
-      dashboard.button("L", "󰅢  Lazy", "<cmd>Lazy<CR>"),
-      dashboard.button("M", "  Mason", "<cmd>Mason<CR>"),
-      dashboard.button("c", "  Edit condfiguration", "<cmd>lua _G.open_config_directory()<CR>"),
+      dashboard.button("h", "󰌌  Key mappings and cheat sheet", "<cmd>NvCheatsheet<CR>"),
+      dashboard.button("L", "󰅢  Lazy package manager", "<cmd>Lazy<CR>"),
+      dashboard.button("M", "  Mason tools and binaries manager", "<cmd>Mason<CR>"),
+      dashboard.button("c", "  Edit Neovim configuration", "<cmd>lua _G.open_config_directory()<CR>"),
+      dashboard.button("n", "󱄅  Edit Nix configuration", "<cmd>lua _G.open_nix_config_directory()<CR>"),
       dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
       dashboard.button("q", "󰩈  Quit", ":qa<CR>"),
     }
